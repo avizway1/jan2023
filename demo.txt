@@ -496,6 +496,20 @@ CLoudTrail : Logging service in AWS. It logs everything (including refresh also)
 
 
 
+============================================================================
+
+Slack Join Link : https://join.slack.com/t/awswithavinash/shared_invite/zt-1mt5yk51x-GyNT7BOWXezs0OZYR1ZbMw
+
+Slack channel name : https://awswithavinash.slack.com
+
+Git URL for all Daily notes: https://github.com/avizway1/jan2023
+
+
+ 
+
+
+
+
 
 
 
