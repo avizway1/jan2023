@@ -1,0 +1,80 @@
+Link to Join : 
+
+
+Object based : Flat file.. We cant install anything.. We cannot run anything.. : S3
+Block based Storage : Designed to run OS.. Supports prog installations..  : EBS / Instance Storage
+Network Based Storage / Storage over network : EFS / FSx
+
+
+S3 : Simple Storage Service : 
+--> Object based storage. We can store any file format.  .pdf .mp3 .docx .ddcx .sql
+--> We store all data in S3 Buckets. Bucket = folder / directory with unique namespace. 
+--> bucket name should be unique. 
+--> Min 3 char.. Max 63 char
+--> No capital letters, No special char (- / .)
+--> Bucket name should not start with . , should not end with ., No adjesent .. 
+--> Should not resemble IP address format. (192.168.100.1)
+--> We have unlimited storage.
+
+--> Object = anything uploaded to s3.
+--> Min object 0 bytes, Max object size : 5 TB
+
+
+ACL : Access Control List : Disabled defaultly.
+
+--> if you want to make any object public from s3 bucket. We need to take are about 3 levels. 
+	--> Block public access at Account level 
+	--> Block public access at Bucket level
+	--> make object public (select object --> Actions --> last option)
+
+--> You should enable ACLs. bucket --> permissions --> Object Ownership --> edit --> ACLs enabled.
+
+
+S3 object URl format : 
+
+Standard path : 
+
+https://s3.regioncode.amazonaws.com/bucketname/objectname
+https://s3.ap-south-1.amazonaws.com/09012023.awsdemo/demo.txt
+
+If we dont have . in bucket name, below format works: (virtual path)
+https://bucketname.s3.amazonaws.com/objectname
+https://bucketname.s3.regioncode.amazonaws.com/objectname
+
+https://avinash.s3.amazonaws.com/demo.txt
+https://avinash.s3.amazonaws.com/avinash.pdf
+
+
+Free Tier : 5 gb standard storage.
+2,000 PUT object (Uploads) / Month
+20,000 GET object (Downloads) / Month
+
+Task : Create an S3 bucket, upload a simple text document. Make it public.
+
+Task 2 : Enable free tier usage alerts. (Login as root user --> Billing dashboard --> billing preferences --> enable free tier alerts, Provide your email id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
