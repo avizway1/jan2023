@@ -118,10 +118,6 @@ Task 2 : Create an s3 bucket, Upload an object, Make object public accesable.
 
 ________________
 
-Task : Create a policy to allow everything in an AWS account, But user should be able to create a bucket in "ap-south-1" region only.
---> Create a bucket in "mumbai", it should work... But if he try to create bucket in any other region it should fail.
-
-
 If you are typing "Delete" ==> you'll get delete Marker. 
 If you are typing "perm Delete" ==> You wont get Delete marker.
 
@@ -143,16 +139,7 @@ Versioning : SHOW
 --> If we delete an object, it deletes permanently.
 _____________________________________________________________________________________
 
-
-
-S3 Storage classes
-Versioning
-LCR
-CRR/SRR
-Bucket policy
-Encryption
-S3 Static webiste hosting
-
+D: 11/01/2023
 
 
 Life Cycle Management Rule : 
@@ -164,12 +151,7 @@ Life Cycle Management Rule :
 S3 Standard --> StandardIA/IT --> Glacier --> Delete
 S3 Standard --> Glacier --> Delete
 S3 Standard --> Delete
-
-
-Task : Create a Life CYcle management rule to transit current version objects from s3 standard to Delete after 2 Days.
-Transit previous version objects to Delete after 1 Day. 
-
-
+ 
 ____________________
 
 CRR / SRR : 
@@ -180,17 +162,27 @@ CRR / SRR :
 RTC : Replication time control : Data replicates to destination bucket with in 15 Min. (99.99% of the data) : COST US
 
 ___
+
 Data transfer from One region to another region "cost us".
 Data transfer within a region won't cost us anything.
 _______________________
 
-aws s3 sync s3://source s3://target		==> 12:00AM   (task scheduler / cron job)
+aws s3 sync s3://source targetpath		==> 12:00AM   (task scheduler / cron job)
 _______________________
 
 Task : Create a bucket in mumbai, Configure Versioning. 
 Create another bucker in Mumbai region only.. configure same region replication between these buckets.
 
-___________________________________________________________________________________________________
+Task 2 : Create a Life CYcle management rule to transit current version objects from s3 standard to Delete after 2 Days.
+Transit previous version objects to Delete after 1 Day.
+
+Task 3 : Create a policy to allow everything in an AWS account, But user should be able to create a bucket in "ap-south-1" region only.
+--> Create a bucket in "mumbai", it should work... But if he try to create bucket in any other region it should fail.
+
+1. Create a policy allow anything but only on mumbai region. (copy policy from AdministratorAccess)
+2. Create an IAM user and allocate Newly created policy
+3. Login as IAM user, Navigate to S3, Try to create a bucket in mumbai, should allow.. SHould deny if you choose any other region.
+________________________________________________________________________________________________
 
 
 S3 Static Website Hostic : 
