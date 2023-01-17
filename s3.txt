@@ -209,7 +209,7 @@ ________________________________________________________________________________
 
 --> SSE (Server Side Encryption) / At-rest : 
 
-SSE-S3 : S3 platform generates and manages the key material. whoever have valid access on S3 platform can decrypt/view the data. (An encryption key that Amazon S3 creates, manages, and uses for you).
+SSE-S3 : S3 platform generates and manages the key material. whoever have valid access on S3 platform can decrypt/view the data. (An encryption key that Amazon S3 creates, manages, and uses for you). AES-256
 
 SSE-KMS : Key Management Service : 
 	KMS (AWS managed keys) (aws/s3) DMK (Default Master Key) : KMS Service generates and manages the key material. whoever have valid access on S3 platform can decrypt/view the data. We cannot delete these keys. 
@@ -265,11 +265,6 @@ Task : Create an S3 Bucket, Create an SNS topic add a subscriber.. Configure Eve
 
 _______________________________________________________________________________
 
-Requirement : IAM user has its s3 bucket, he need to get access on his own bucket. : IAM Policy
-https://s3.console.aws.amazon.com/s3/buckets/bucketname
-
-Requirement : IAM User has s3 full access, But i want to limit this user access on "one particular" bucket. 
-
 Deny upload object operation on a particular bucket. : Bucket policy
 
 Bucket ARN : arn:aws:s3:::avinash.bucket
@@ -283,6 +278,11 @@ Bucket level : arn:aws:s3:::avinash.bucket
 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-3
 
+
+
+arn:aws:s3:::09012023.awsdemo,
+arn:aws:s3:::09012023.awsdemo/*
+
 ___________________
 
 Task : Try to access s3 using 3rd party applications. (S3 browser, Cyberduck, Cloudberry explorer, winscp)
@@ -291,8 +291,22 @@ Task 2 : What is presigned URL. Configure an object to generate a presign url to
 
 Task 3 : Complete the one bucket task / Region restriction / MFA task.
 
++++++++++++
+Requirement : IAM user has its s3 bucket, he need to get access on his own bucket. : IAM Policy
+https://s3.console.aws.amazon.com/s3/buckets/bucketname
+
+Requirement : Create an IAM user, Create a bucket for this user... Now, This user should get access only on his specific bucket..
+He should not able to view all the s3 buckets.+++++++++
+
 Task 4 : Create an IAM user.. Provide him S3FullAccess.. But on a specific bucket Deny him to perform "DeleteObject, DeleteBucket, PutObject, getbucketpolicy"
 ____________________
+
+
+
+
+
+
+
 
 
 Requester pays : the requester pays for requests and data transfer costs, and anonymous access to this bucket is disabled. Instead of bucket owner data requester need to pay for the data transfer & request.
