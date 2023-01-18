@@ -360,6 +360,8 @@ AWS Snow Family :
 --> AWS Snowball edge : 40 - 100 TB
 --> AWS Snow mobile : PB scale container
 
+1 pb data, 1 gbps internet line with 80%.. 20-25 yrs
+
 ___
 
 AWS Direct Connect : Dedicated connection between on-premise/local environment to AWS environment. 3-4 weeks time required. We need to choose the required bandwidth. 
