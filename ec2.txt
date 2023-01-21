@@ -244,7 +244,7 @@ ________________________________________________________________________________
 
 whoami		--> tells us as what user we are working.
 sudo		--> allow user to execute the command with root level permissions
-sudo su	--> Switch to root user
+sudo su		--> Switch to root user
 exit		--> Exit from root user to ec2-user
 clear		--> Clears the screen
 
@@ -274,7 +274,10 @@ Press I		--> INSERT Mode
 Press ESC		--> ReadOnly Mode
 :wq				--> Write and Quit (Write changes to file and quit the editor)
 :q!				--> Quit the Editor without writing the changes
-__
+_____________________________________________________________________________________
+
+https://www.udemy.com/course/linuxwithavinash/?couponCode=JAN2023
+____________________________________________________________________________________
 
 Req: Make this linux Instance as Web Server (Apache).
 
