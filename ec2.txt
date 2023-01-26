@@ -605,7 +605,7 @@ Get the 2gb volume data from instance 1a to newly launch 1b ec2 instance.. Make 
 
 ______________________________________________________________________________________
 
-
+D: 26/01/2023
 
 
 SOP : Standard Operational Procedure : 
@@ -645,15 +645,16 @@ Similar to Snapshots..
 
 ______________________________________
 
-Task : Launch a windows ec2 instance, make it as "Web Server", Verify the "Security groups" and deliver custom webpage.
+Task : Launch a windows ec2 instance.. Change ADMINISTRATOR PASSWORD, Change wallpaper, Change timezone.. Stop instance and Create a GoldenAMI.
+--> Launch an ec2 instance from GAMI, get connect to it and verify all changes present or not.!!!
 
-Task 2 : Perform some more customisations on the task 1 instance and make it as GoldemAMI , Launch instance from GAMI and Test we got all the customisations or not..!!!!!!
 
+Task 2 : Launch Linux ec2 instance, Make it as webserver.. Add custom webpages.. Create a Golden AMI and Launch instance from GAMI and test output. 
 
 Task 3 : How to setup password authentication to ec2-user user instead of keypair authentication.
 https://comtechies.com/password-authentication-aws-ec2.html
 
-Task 4 : Launch Linux ec2 instance, Make it as webserver.. Add custom webpage.. Create a Golden AMI and Launch instance from GAMI and test output. 
+
 
 
 _________________________________________________________________________________________
