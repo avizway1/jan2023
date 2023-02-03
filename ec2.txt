@@ -687,6 +687,9 @@ echo "<h1>This is my WebServer : 8080</h1>" > /var/www/html/index.html
 For ELBs, We will get DNS Endpoint..
 Roundrobin algorithm.. 
 
+If you want to view IP address of an ELB, 
+--> Navigate to "Network interfaces" and observe, You can get IP of ELB.
+--> nslookup "ELB-DNS-NAME"
 ___________________________________________________
 
 Target Group : Each target group is used to route requests to one or more registered targets. When you create each listener rule, you specify a target group and conditions. When a rule condition is met, traffic is forwarded to the corresponding target group.
@@ -718,40 +721,9 @@ Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. 
 Task : Practice application ELB / ALB with multiple TGs. (80, 8080, 8888)
 --> Make sure you configure Pipeline mechanism between your ec2 instances and ELB.!!
 
+___________________________________________________________________________________________________
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_______________________________________________________________________________________________________
-
-Amazon linux 2 AMi ID : ami-079b5e5b3971bd10d
-
---> Create a GoldenAMI
---> Create an ELastic load Balancer
---> Configure ASG
-	--> Create a luanch config / launch template
-	--> Configure ASG
-	
-Task : Configure ALB with multiple Targhet groups (80, 8888, 8080)
-Task 2 ; Configure ASG with 2 as desired capacity and test it. (Create a launch configuration with amazon linux 2 ami, Use userdata)
-Amazon linux 2 AMi ID : ami-079b5e5b3971bd10d
-
-
-Task 3 : Create an Alarm on your ec2 instance, If CPU utilisation is below 20% for 10 min. Configure to terminate the instance and configure to get alert to your email.
-________________________________________________________________________________________
+D: 03/02/2023
 
 
 ASG : Auto Scaling Group :
