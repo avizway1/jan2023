@@ -917,18 +917,23 @@ Task 3 : Use Switch Role option to roam across multiple account.
 
 _____________________________________________________________________________________________________
 
+D: 07/02/2023
+
 Platform : Windows
 Platform : Linux
 
-Naming Standards : Wi-wt-ad-p : 
+Naming Standards : Wi-wt-ad-p :  
 		: Li-ap2-c1-s : 
+
+s : Staging / NonProd
+u : uat 
+p : production
+
 wi : Windows
 li : Linux
 wt : app code, tw : app code
 c1/c2 : Client id 
-s : Staging / NonProd
-u : uat 
-p : production
+
 
 ____________________
 
@@ -945,6 +950,8 @@ AWSSupport-RunEC2RescueForWindowsTool
 Task : Make linux ec2 instance as webserver without logging to OS level.
 
 Task : Change the timezone of an windows ec2 instance using ssm run command. (tzutil /s "India Standard Time")
+
+<script> tzutil /s "India Standard Time" </script>
 
 ________________________________________________________________________________________________
 
@@ -976,14 +983,15 @@ Task 1 : Configure Eventbridge to stop an ec2 instance at a particular time usin
 
 Task 2 : Configure to stop an ec2 instance after 5 minutes, trigger an email with custom email format.
 
-
+Task 3 : Configure to get an alert when someone deleted an s3 bucket.
 
 _______________________________________________________________________________________
+
 --> Shared security responsibility model
 Security OF the Cloud : Physical infra, hardware, Physical security/Access : AWS
 Security IN the cloud : OS Patching, Firewall, Application level security : Customer
 
-___
+_______
 
 PG : 
 --> Cluster PG
