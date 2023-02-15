@@ -1,10 +1,10 @@
 RDS : Relational Database Service : 6 Relational db engines.
 --> Amazon Aurora	(Mysql Compatable / Postgresql Compatable)
---> MySQL	
---> MS SQL		
---> PostgreSQL		
---> MariaDB		
---> Oracle		
+--> MySQL
+--> MS SQL	
+--> PostgreSQL
+--> MariaDB
+--> Oracle
 
 NoSQL database : IN AWS DynamoDB is a Serverless architecture.
 --> DynamoDB : 
@@ -40,7 +40,6 @@ GUI tools to manage the Databases :
 --> PostgreSQL	: pgadmin
 --> MariaDB	: workbench
 --> Oracle	: oracle tool, Toad
-
 
 
 Create a DB Subnet Group, Add 2 private subnets from Diff AZs (ap-south-1a & ap-south-1b private Subntes).. 
@@ -94,8 +93,8 @@ ________________________________________________________________________________
 
 MultiAZ Deployment : Designed for Failover/FT purpose. : Creates a standby in a different Availability Zone (AZ) to provide data redundancy, eliminate I/O freezes, and minimize latency spikes during system backups.
 
-192.168.5.104
-192.168.3.249
+ 192.168.1.241
+ 
 
 Automated Backup : This feature creates backup copies of our RDS instances automatically.  Based on retention period, we can have backup copies in our aws env to restore. 
 Disable : 0 
@@ -134,18 +133,18 @@ Restore to point in time : You are creating a new DB instance from a source DB i
 
 ___
 
-Task 1 : Create environment as mentioned in "VPC1.png"
 
-Task 2 ; Restore the Shared sample db to Launch mysql rds cluster.
+Task 1 : https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-restore-using-aws-backup/?trk=gs_card
 
-Task 2 : https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-restore-using-aws-backup/?trk=gs_card
-
-Task 3 : https://aws.amazon.com/getting-started/hands-on/amazon-ebs-backup-and-restore-using-aws-backup/?trk=gs_card
-
-Task 4:
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html
+Task 2 : https://aws.amazon.com/getting-started/hands-on/amazon-ebs-backup-and-restore-using-aws-backup/?trk=gs_card
 
 ____________________________________________________________________________________
+
+
+
+
+
+
 
 
 Aurora DB : No Free tier eligibility
@@ -193,6 +192,9 @@ __________________
 Task : 
 https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
 
+
+Task 4:
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html
 
 ________________
 
