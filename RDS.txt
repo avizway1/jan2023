@@ -133,18 +133,11 @@ Restore to point in time : You are creating a new DB instance from a source DB i
 
 ___
 
-
 Task 1 : https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-restore-using-aws-backup/?trk=gs_card
 
 Task 2 : https://aws.amazon.com/getting-started/hands-on/amazon-ebs-backup-and-restore-using-aws-backup/?trk=gs_card
 
 ____________________________________________________________________________________
-
-
-
-
-
-
 
 
 Aurora DB : No Free tier eligibility
@@ -192,7 +185,7 @@ __________________
 Task : 
 https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
 
-
+Developers:
 Task 4:
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html
 
@@ -209,6 +202,14 @@ Launch another rds mysql db instance-2.. Migrate all the datbases and tables fro
 https://www.youtube.com/watch?v=iRhJDGp-ew8
 
 _________________
+
+Task : launch an ec2 instance in mumbai region.. connect to it and make it as webserver.. 
+
+Use AWS Application Migration Service (MGN) and migrate the Mumbai region ec2 instance to "Sydney" region and verify webpage.
+
+https://www.youtube.com/watch?v=fIEwoFaXExQ
+
+__________________
 
 
 TASK 2 : https://aws.amazon.com/getting-started/hands-on/deploy-wordpress-with-amazon-rds/
@@ -231,6 +232,7 @@ migrate existing data. one time.
 Migrate changes only. only changes migrates.
 Migrate existing and continue migration. 
 
+
 How to connect to Redshift : 
 https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html
 Tool Name : sql workbencj/J.
@@ -245,23 +247,3 @@ Compute Node : it stores actual data
 
 Amazon Neptune : Fast, reliable graph database
 Amazon DocumentDB : MongoDB compatibility
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
