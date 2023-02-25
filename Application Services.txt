@@ -152,6 +152,7 @@ chef : https://learn.chef.io/courses/course-v1:chef+Chef101+Perpetual/about
 
 ______________________________________________________________________________________
 
+D : 
 
 Cloud9 : IDE with in AWS environment. 
 
@@ -227,7 +228,18 @@ Task 2 : Create a repository, Get familier with clone, push, add, commit.
 Task 3 : Launch an ec2 instance in Mumbai region.. Migrate this ec2 instance from mumbai region to N Virginia region using "CloudEndure Migration".
 Cloudendure migration : https://www.youtube.com/watch?v=8xf1RpPdcHs
 
-avizway@gmail.com
+
+
+
+
+
+https://www.udemy.com/course/linuxwithavinash/?couponCode=FEB2023
+
+https://www.udemy.com/course/jenkinswithavinash/?couponCode=FEB2023
+
+https://www.youtube.com/watch?v=rtI26X6FJX0&list=PLneBjIzDLECkdgoinrTO7D519zgPEmcte
+
+
 
 
 
